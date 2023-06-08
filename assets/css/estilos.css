@@ -1,0 +1,11 @@
+#imagen {
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+}
+
+#imagen_automovil {
+    margin: 2%;
+    width: 50%;
+    border: 1px solid blue;
+}
