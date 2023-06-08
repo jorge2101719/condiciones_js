@@ -10,3 +10,9 @@
     margin: 2%;
     width: 50%;
 }
+
+#comentario {
+    color: yellow;
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
