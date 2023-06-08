@@ -62,10 +62,15 @@ let mensaje = document.querySelector('#mensaje');
 ingresar.addEventListener('click', () => {
     if (clave1.value == 9 && clave2.value == 1 && clave3.value == 1) {
         mensaje.innerHTML = 'Password 1 correcta. Bienvenido';
+        mensaje.style.padding = '1%';
     } else if (clave1.value == 7 && clave2.value == 1 && clave3.value == 4) {
         mensaje.innerHTML = 'Password 2 correcta. Bienvenido';
+        mensaje.style.padding = '1%';
     } else {
         mensaje.innerHTML = 'Password incorrecta. Inténtelo nuevamente';
+        mensaje.style.backgroundColor = 'red';
+        mensaje.style.padding = '2%';
+        mensaje.style.fontSize = '1.2rem';
     }
 })
 
