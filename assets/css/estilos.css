@@ -23,10 +23,19 @@
 
 /* -------------------- Parte 2 ------------------------------ */
 
+#parte2 {
+    background-color: cornflowerblue;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 10px; */
+}
+
 #galeria {
     margin-top: 5%;
     padding: 1%;
-    background-color: gray;
+    /* background-color: gray; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
