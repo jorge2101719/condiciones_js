@@ -52,3 +52,9 @@ verificar.addEventListener('click', () => {
 
 
 // Parte 3
+
+let clave1 = document.querySelector('#clave1');
+let clave2 = document.querySelector('#clave2');
+let clave3 = document.querySelector('#clave3');
+let ingresar = document.querySelector('#ingresar');
+let mensaje = document.querySelector('#mensaje');
