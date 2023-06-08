@@ -58,3 +58,22 @@ let clave2 = document.querySelector('#clave2');
 let clave3 = document.querySelector('#clave3');
 let ingresar = document.querySelector('#ingresar');
 let mensaje = document.querySelector('#mensaje');
+
+ingresar.addEventListener('click', () => {
+    if (clave1.value == 9 && clave2.value == 1 && clave3.value == 1) {
+        mensaje.innerHTML = 'Password 1 correcta. Bienvenido';
+    } else if (clave1.value == 7 && clave2.value == 1 && clave3.value == 4) {
+        mensaje.innerHTML = 'Password 2 correcta. Bienvenido';
+    } else {
+        mensaje.innerHTML = 'Password incorrecta. Inténtelo nuevamente';
+    }
+})
+
+
+
+
+
+
+
+
+
