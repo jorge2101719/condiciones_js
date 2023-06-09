@@ -8,10 +8,12 @@ img.addEventListener('click', () => {
     if (contador % 2 == 0) {
         img.style.border = '2px solid red';
         comentario.innerHTML = 'Con borde';
+        comentario.style.backgroundColor = '#02f';
         contador += 1;
     } else {
         img.style.border = '0';
         comentario.innerHTML = 'Sin borde';
+        comentario.style.backgroundColor = 'red';
         contador += 1;
     }
 });

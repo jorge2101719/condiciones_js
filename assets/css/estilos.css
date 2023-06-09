@@ -1,5 +1,17 @@
+/* Características globales */
+
 body {
     margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+}
+
+button {
+    padding: 1%;
+    border: 0;
+    background-color: #5f3;
+    border-radius: 15px;
+    font-size: 1rem;
 }
 
 
@@ -26,12 +38,11 @@ body {
 }
 
 #comentario {
-    background-color: #02f;
+    background-color: red;
     color: yellow;
     padding: 1%;
     border-radius: 15px;
     font-size: 2rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 
@@ -94,7 +105,7 @@ body {
 }
 
 #mensaje {
-    background-color: #0f2;
+    /* background-color: #02f; */
     color: white;
     border-radius: 15px;
 }
