@@ -4,7 +4,10 @@ let img = document.querySelector('#imagen_automovil');
 let comentario = document.querySelector('#comentario');
 let contador = 0;
 
-img.addEventListener('click', () => {
+// llamada a función cambiarBorde con evento click
+img.addEventListener('click', cambiarBorde);
+
+function cambiarBorde () {
     if (contador % 2 == 0) {
         img.style.border = '2px solid red';
         comentario.innerHTML = 'Con borde';
@@ -16,7 +19,7 @@ img.addEventListener('click', () => {
         comentario.style.backgroundColor = 'red';
         contador += 1;
     }
-});
+}
 
 
 // Parte 2
@@ -28,7 +31,10 @@ let aviso = document.querySelector('#aviso');
 let verificar = document.querySelector('#verificar');
 let suma = 0;
 
-verificar.addEventListener('click', () => {
+// llamada a función contarStickers con evento click
+verificar.addEventListener('click', contarStickers);
+
+function contarStickers () {
     if (input1.value > 0 && input2.value > 0 && input3.value > 0) {
         suma = Number(input1.value) + Number(input2.value) + Number(input3.value);
         if (suma > 10) {
@@ -55,7 +61,7 @@ verificar.addEventListener('click', () => {
         suma = 0;
         console.log(input1)
     }
-});
+}
 
 
 
@@ -67,6 +73,7 @@ let clave3 = document.querySelector('#clave3');
 let ingresar = document.querySelector('#ingresar');
 let mensaje = document.querySelector('#mensaje');
 
+// uso de función flecha, usando instrucciones de W3School y otras fuentes
 ingresar.addEventListener('click', () => {
     if (clave1.value == 9 && clave2.value == 1 && clave3.value == 1) {
         mensaje.innerHTML = 'Password 1 correcta. Bienvenido';
