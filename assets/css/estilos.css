@@ -14,6 +14,19 @@ button {
     font-size: 1rem;
 }
 
+select {
+    border: 0;
+    border-radius: 5px;
+    margin: .1rem;
+    font-size: 1rem;
+    background-color: #000;
+    color: white;
+}
+
+img {
+    border-radius: 15px;
+}
+
 
 /* ------------------- Parte 1 ----------------- */
 
@@ -66,8 +79,19 @@ button {
     gap: 10px;
 }
 
+#img1 {
+    width: 80%;
+}
+
+#img2 {
+    width: 96%;
+}
+
+#img3 {
+    width: 80%;
+}
+
 #img1, #img2, #img3 {
-    width: 100%;
     object-fit: cover;
 }
 
