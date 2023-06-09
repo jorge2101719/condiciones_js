@@ -31,16 +31,22 @@ verificar.addEventListener('click', () => {
         suma = Number(input1.value) + Number(input2.value) + Number(input3.value);
         if (suma > 10) {
             aviso.innerHTML = 'Tienes demasiados Stickers ' + '(' + suma + ')';
+            aviso.style.padding = '1%';
+            aviso.style.backgroundColor = 'red';
             input1.value = '';
             input2.value = '';
             input3.value = '';
             // suma = 0;
         } else {
             aviso.innerHTML = `Tienes ${suma} stickers`;
+            aviso.style.padding = '1%';
+            aviso.style.backgroundColor = '#02f';
         }
     } else {
         console.log(input1);
         aviso.innerHTML = 'uno (o más) número(s) es(son) incorrecto(s)';
+        aviso.style.padding = '1%';
+        aviso.style.backgroundColor = 'red';
         input1.value = '';
         input2.value = '';
         input3.value = '';
@@ -63,9 +69,11 @@ ingresar.addEventListener('click', () => {
     if (clave1.value == 9 && clave2.value == 1 && clave3.value == 1) {
         mensaje.innerHTML = 'Password 1 correcta. Bienvenido';
         mensaje.style.padding = '1%';
+        mensaje.style.backgroundColor = '#02f';
     } else if (clave1.value == 7 && clave2.value == 1 && clave3.value == 4) {
         mensaje.innerHTML = 'Password 2 correcta. Bienvenido';
         mensaje.style.padding = '1%';
+        mensaje.style.backgroundColor = '#02f';
     } else {
         mensaje.innerHTML = 'Password incorrecta. Inténtelo nuevamente';
         mensaje.style.backgroundColor = 'red';

@@ -6,16 +6,23 @@ body {
 /* ------------------- Parte 1 ----------------- */
 
 #parte1 {
+    background-color: yellowgreen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contenido-parte1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: gray;
+    /* background-color: gray; */
     gap: 10px;
 }
 
 #imagen_automovil {
     margin: 2%;
-    width: 50%;
+    width: 75%;
 }
 
 #comentario {
@@ -89,4 +96,5 @@ body {
 #mensaje {
     background-color: #0f2;
     color: white;
+    border-radius: 15px;
 }
