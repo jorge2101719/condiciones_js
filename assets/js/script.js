@@ -51,7 +51,6 @@ function contarStickers () {
             aviso.style.backgroundColor = '#02f';
         }
     } else {
-        console.log(input1);
         aviso.innerHTML = 'uno (o más) número(s) es(son) incorrecto(s)';
         aviso.style.padding = '1%';
         aviso.style.backgroundColor = 'red';
@@ -59,7 +58,6 @@ function contarStickers () {
         input2.value = '';
         input3.value = '';
         suma = 0;
-        console.log(input1)
     }
 }
 
