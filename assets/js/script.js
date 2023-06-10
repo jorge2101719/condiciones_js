@@ -44,7 +44,7 @@ function contarStickers () {
     if (input1.value > 0 && input2.value > 0 && input3.value > 0) {
         suma = Number(input1.value) + Number(input2.value) + Number(input3.value);
         if (suma > 10) {
-            aviso.innerHTML = 'Tienes demasiados Stickers ' + '(' + suma + ')';
+            aviso.innerHTML = 'Tienes demasiados adhesivos ' + '(' + suma + ')';
             aviso.style.padding = '1%';
             aviso.style.backgroundColor = 'red';
             input1.value = '';
@@ -52,7 +52,7 @@ function contarStickers () {
             input3.value = '';
             // suma = 0;
         } else {
-            aviso.innerHTML = `Tienes ${suma} stickers`;
+            aviso.innerHTML = `Tienes ${suma} adhesivos`;
             aviso.style.padding = '1%';
             aviso.style.backgroundColor = '#02f';
         }
@@ -83,15 +83,15 @@ let mensaje = document.querySelector('#mensaje');
 // entregando los respectivos mensajes
 ingresar.addEventListener('click', () => {
     if (clave1.value == 9 && clave2.value == 1 && clave3.value == 1) {
-        mensaje.innerHTML = 'Password 1 correcta. Bienvenido';
+        mensaje.innerHTML = 'Clave 1 correcta. Bienvenido';
         mensaje.style.padding = '1%';
         mensaje.style.backgroundColor = '#02f';
     } else if (clave1.value == 7 && clave2.value == 1 && clave3.value == 4) {
-        mensaje.innerHTML = 'Password 2 correcta. Bienvenido';
+        mensaje.innerHTML = 'Clave 2 correcta. Bienvenido';
         mensaje.style.padding = '1%';
         mensaje.style.backgroundColor = '#02f';
     } else {
-        mensaje.innerHTML = 'Password incorrecta. Inténtelo nuevamente';
+        mensaje.innerHTML = 'Clave incorrecta. Inténtelo nuevamente';
         mensaje.style.backgroundColor = 'red';
         mensaje.style.padding = '2%';
         mensaje.style.fontSize = '1.2rem';
