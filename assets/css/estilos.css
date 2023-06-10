@@ -47,15 +47,16 @@ img {
 
 #imagen_automovil {
     margin: 2%;
-    width: 75%;
+    width: 62%;
 }
 
 #comentario {
+    width: 25%;
     background-color: red;
     color: yellow;
     padding: 1%;
     border-radius: 15px;
-    font-size: 2rem;
+    font-size: 1.3rem;
 }
 
 

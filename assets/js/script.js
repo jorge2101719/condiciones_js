@@ -14,14 +14,16 @@ img.addEventListener('click', cambiarBorde);
 function cambiarBorde () {
     if (contador % 2 == 0) {
         img.style.border = '2px solid red';
-        comentario.innerHTML = 'Con borde';
+        img.style.width = '60.7%';
         comentario.style.backgroundColor = '#02f';
         contador += 1;
+        comentario.innerHTML = 'Con borde (' + contador + ' clicks)';
     } else {
         img.style.border = '0';
-        comentario.innerHTML = 'Sin borde';
+        img.style.width = '62%';
         comentario.style.backgroundColor = 'red';
         contador += 1;
+        comentario.innerHTML = 'Sin borde (' + contador + ' clicks)';
     }
 }
 
