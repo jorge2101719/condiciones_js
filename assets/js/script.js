@@ -7,6 +7,10 @@ let contador = 0;
 // llamada a función cambiarBorde con evento click
 img.addEventListener('click', cambiarBorde);
 
+// definición de la función que (des)marca el borde
+// se hace uso de función módulo 2 como condición de control
+// si bien no se pedía ningún texto junto a ella decidí hacerlo para mayor claridad;
+// se incluyen instrucciones para cambiar el color de fondo del texto junto a la imagen
 function cambiarBorde () {
     if (contador % 2 == 0) {
         img.style.border = '2px solid red';
@@ -34,6 +38,8 @@ let suma = 0;
 // llamada a función contarStickers con evento click
 verificar.addEventListener('click', contarStickers);
 
+// definición de la función que cuenta los stickers
+// se usan fondos azules cuando todo va bien y rojo en caso contrario
 function contarStickers () {
     if (input1.value > 0 && input2.value > 0 && input3.value > 0) {
         suma = Number(input1.value) + Number(input2.value) + Number(input3.value);
@@ -71,7 +77,10 @@ let clave3 = document.querySelector('#clave3');
 let ingresar = document.querySelector('#ingresar');
 let mensaje = document.querySelector('#mensaje');
 
+
 // uso de función flecha, usando instrucciones de W3School y otras fuentes
+// la función flecha tiene las instrucciones que permiten verificar las claves
+// entregando los respectivos mensajes
 ingresar.addEventListener('click', () => {
     if (clave1.value == 9 && clave2.value == 1 && clave3.value == 1) {
         mensaje.innerHTML = 'Password 1 correcta. Bienvenido';
@@ -88,12 +97,3 @@ ingresar.addEventListener('click', () => {
         mensaje.style.fontSize = '1.2rem';
     }
 })
-
-
-
-
-
-
-
-
-
