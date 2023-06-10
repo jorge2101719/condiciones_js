@@ -85,15 +85,15 @@ let mensaje = document.querySelector('#mensaje');
 // entregando los respectivos mensajes
 ingresar.addEventListener('click', () => {
     if (clave1.value == 9 && clave2.value == 1 && clave3.value == 1) {
-        mensaje.innerHTML = 'Clave 1 correcta. Bienvenido';
+        mensaje.innerHTML = 'Password 1 correcta. Bienvenido(a)';
         mensaje.style.padding = '1%';
         mensaje.style.backgroundColor = '#02f';
     } else if (clave1.value == 7 && clave2.value == 1 && clave3.value == 4) {
-        mensaje.innerHTML = 'Clave 2 correcta. Bienvenido';
+        mensaje.innerHTML = 'Password 2 correcta. Bienvenido(a)';
         mensaje.style.padding = '1%';
         mensaje.style.backgroundColor = '#02f';
     } else {
-        mensaje.innerHTML = 'Clave incorrecta. Inténtelo nuevamente';
+        mensaje.innerHTML = 'Password incorrecta. Inténtalo nuevamente';
         mensaje.style.backgroundColor = 'red';
         mensaje.style.padding = '2%';
         mensaje.style.fontSize = '1.2rem';
