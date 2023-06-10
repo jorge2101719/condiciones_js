@@ -78,7 +78,7 @@ let ingresar = document.querySelector('#ingresar');
 let mensaje = document.querySelector('#mensaje');
 
 
-// uso de función flecha, usando instrucciones de W3School y otras fuentes
+// uso de función flecha, usando instrucciones de MDN Web Docs y otras fuentes
 // la función flecha tiene las instrucciones que permiten verificar las claves
 // entregando los respectivos mensajes
 ingresar.addEventListener('click', () => {
